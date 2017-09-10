@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Введите слово"
+        android:id="@+id/textView"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="73dp" />
+
+    <EditText
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginLeft="5pt"
+        android:layout_width="match_parent"
+        android:id="@+id/editWord"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:inputType="text" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Введите перевод"
+        android:id="@+id/textView2"
+        android:layout_below="@+id/editWord"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginLeft="5pt"
+        android:layout_width="match_parent"
+        android:id="@+id/editTranslation"
+        android:layout_below="@+id/textView2"
+        android:layout_centerHorizontal="true"
+        android:inputType="text" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OK"
+        android:id="@+id/button"
+        android:layout_below="@+id/editTranslation"
+        android:layout_toEndOf="@+id/textView2" />
+
+</RelativeLayout>
